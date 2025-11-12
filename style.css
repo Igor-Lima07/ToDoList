@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+
+body {
+    background-color: rgb(198, 11, 255);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P";
+}
+
+.mainContainer {
+    display: block;
+    text-align: center;
+    border-left: solid rgb(40, 1, 48) 5px;
+    background-color: #EFBF04;
+    border-top: solid rgb(40, 1, 48) 5px;
+    width: 50vh;
+    position: absolute;     
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#addContainer{
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+
+#input{
+    height: 30px;
+    border: solid 3px;
+    font-family: "Press Start 2P";
+    font-size: 10px;
+    text-align: center;
+}
+
+#btnAdd{
+    height: 36px;
+    width: 36px;
+    background-color: #ffffff;
+    font-size: medium;
+    font-weight: bolder;
+    border: solid 3px;
+    transition: 0.2s;
+}
+
+#btnAdd:hover{
+    background-color: rgb(207, 207, 207);
+    height: 40px;
+    width: 40px;
+    transition: 0.2s;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+li{
+    display: flex;
+    text-align: left;
+}
+
+
+.checkbox{
+    height: 25px;
+    width: 25px;
+    accent-color: #4CAF50;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+
+.container{
+    width: 38.5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; 
+}
