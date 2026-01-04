@@ -11,6 +11,12 @@ atualizarLista = function(){
         tarefa = document.createElement("li");
         checkbox = document.createElement("input")
         delBtn = document.createElement("button")
+        delIcon = document.createElement("i")
+        delIcon.className = "bi bi-trash-fill"
+        delIcon.classList.add("delIcon")
+        editIcon = document.createElement("i")
+        editIcon.className = "bi bi-pencil"
+        editIcon.classList.add("editIcon")
         editBtn = document.createElement("button")
         checkbox.type = "checkbox"
         editBtn.classList.add("editBtn")
@@ -25,6 +31,8 @@ atualizarLista = function(){
 
         tarefaText.textContent = task
 
+    editBtn.appendChild(editIcon)    
+    delBtn.appendChild(delIcon)    
     container.appendChild(tarefaText)
     container.appendChild(subContainer)
     subContainer.appendChild(checkbox)
@@ -49,4 +57,11 @@ btnAdd.addEventListener("click", function(){
     addTarefa()
     atualizarLista()
 });
+
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        addTarefa()
+        atualizarLista()
+    }
+})
 

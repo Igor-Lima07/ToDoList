@@ -37,11 +37,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px
+    gap: 30px;
+    margin-bottom: 20px;
 }
 
 #input{
     height: 30px;
+    width: 500px;
     border: solid 3px;
     font-family: "Press Start 2P";
     font-size: 10px;
@@ -107,10 +109,13 @@ li:hover {
     cursor: pointer;
     flex-shrink: 0;
     margin: 0;
+    transition: 0.3s;
 }
 
 .checkbox:hover {
     background-color: #80e684;
+    transform: translate(0, -5px);
+    transition: 0.3s;
 }
 
 .container{
@@ -140,28 +145,54 @@ li:hover {
 }
 
 .delBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 25px;
     width: 25px;
     background-color: red;
     cursor: pointer;
     flex-shrink: 0;
-    border: solid 1px grey
+    border: solid 1px grey;
+    transition: 0.3s;
 }
 
 .delBtn:hover {
     background-color: rgb(238, 32, 32);
+    transform: translate(0, -5px);
+    transition: 0.3s;
 }
 
 .editBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 25px;
     width: 25px;
     background-color: rgb(255, 251, 0);
     cursor: pointer;
     flex-shrink: 0;
-    border: solid 1px grey
+    border: solid 1px grey;
+    transition: 0.3s;
 }
 
 .editBtn:hover {
     background-color: #fad43b;
+    transform: translate(0, -5px);
+    transition: 0.3s;
 }
 
+.delIcon{
+    margin-top: 2px;
+    margin-right: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+
+.editIcon {
+    margin-top: 2px;
+    margin-right: 2px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
