@@ -21,6 +21,7 @@ atualizarLista = function(){
         container = document.createElement("container")
         container.classList.add("container")
         tarefaText = document.createElement("span")
+        tarefaText.classList.add("tarefaText")
 
         tarefaText.textContent = task
 
@@ -48,3 +49,4 @@ btnAdd.addEventListener("click", function(){
     addTarefa()
     atualizarLista()
 });
+

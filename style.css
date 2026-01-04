@@ -14,14 +14,14 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-left: solid rgb(40, 1, 48) 5px;
+    border: solid rgb(0, 0, 0) 3px;
     background-color: #f1c821;
-    border-top: solid rgb(40, 1, 48) 5px;
-    width: 70vh;
+    width: 100vh;
     position: absolute;     
     left: 50%; 
     top: 50%; 
     transform: translate(-50%, -50%);
+    box-shadow: 7px 7px black;
 }
 
 #taskContainer {
@@ -46,6 +46,12 @@ body {
     font-family: "Press Start 2P";
     font-size: 10px;
     text-align: center;
+    transition: 0.3s;
+}
+
+#input:hover{
+    transform: translate(0, -5px);
+    transition: 0.3s;
 }
 
 #btnAdd{
@@ -55,14 +61,11 @@ body {
     font-size: medium;
     font-weight: bolder;
     border: solid 3px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 #btnAdd:hover{
-    background-color: rgb(207, 207, 207);
-    height: 40px;
-    width: 40px;
-    transition: 0.2s;
+    transform: translate(0, -5px) ;
 }
 
 #list{
@@ -70,21 +73,32 @@ body {
     flex-direction: column;
     justify-content: left;
     gap: 30px;
-    width: 60vh;
+    width: 90vh;
     margin-right: 40px;
     font-size: 12px;
     text-align: center;
+
 }
 
 li{
+    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    pad: 0;
-    text-align: left;
-    width:58vh;
+    padding: 0;
+    text-align: center;
+    min-height: 40px;
+    height: auto;
+    width: auto;
+    border: solid 3px black;
+    box-shadow: 5px 5px  black;
+    transition: 0.3s;
 }
 
+li:hover {
+    transform: translate(0, -5px) ;
+    transition: 0.3s;
+}
 
 .checkbox{
     height: 25px;
@@ -93,7 +107,6 @@ li{
     cursor: pointer;
     flex-shrink: 0;
     margin: 0;
-    margin-right: 40px ;
 }
 
 .checkbox:hover {
@@ -103,10 +116,16 @@ li{
 .container{
     width: 150vh;
     display: flex;
-    flex-direction: row;
+    text-align: center;
     flex-wrap: nowrap;
+    padding: 10px;
+    gap: 30px;
     justify-content: space-between;
-    gap: 90px;
+}
+
+.tarefaText{
+    margin-top: 6px;
+    margin-right: 0;
 }
 
 .subContainer {
@@ -116,8 +135,8 @@ li{
     justify-content: center;
     gap: 10px;
     width: 70px;
-    margin-left: auto;
     flex-wrap: nowrap;
+    margin-right: 10px;
 }
 
 .delBtn {
